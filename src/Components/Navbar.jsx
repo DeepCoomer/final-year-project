@@ -29,13 +29,18 @@ const Navbar = (props) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/"}>
-                  About
+                <Link className="nav-link active" aria-current="page" to={"/plag"}>
+                  Plagiarism
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/"}>
-                  Contact
+                <Link className="nav-link active" aria-current="page" to={"/piracy"}>
+                  Piracy
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to={"/addbook"}>
+                  Add Book
                 </Link>
               </li>
             </ul>

@@ -1,0 +1,24 @@
+from flask import Flask,request
+from flask_cors import CORS, cross_origin
+import urllib
+import cv2
+import numpy as np
+import math
+from keras.models import load_model
+import PIL
+
+app = Flask(__name__)
+cors = CORS(app)
+
+    
+
+@app.route("/addbook",methods=["POST","GET"])
+@cross_origin()
+def addbook():
+    if request.method=="POST":
+        req = request.files['file']
+        print(req)
+    return {}
+
+if __name__=="__main__":
+    app.run(debug=True)
